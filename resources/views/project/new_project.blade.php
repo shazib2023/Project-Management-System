@@ -8,7 +8,8 @@
                 <div class="card-header">{{ __('New Project') }}</div>
 
                 <div class="card-body">
-                    <form>
+                    <form action="{{route('store.project')}}" method="POST">
+                        @csrf
 
                         <div class="form-group">
                             <label for="projectName">Project Name</label>
